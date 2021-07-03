@@ -1,0 +1,85 @@
+.background{
+        position: fixed;
+        height:100%;
+        width:100%;
+        background: rgba(3, 11, 34, 0.2);
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    .shapeCreaterContainer{
+        height:80%;
+        width:40%;
+        background:#FFFFFF;;
+        border: 1px solid #F1F2F4;
+        box-sizing: border-box;
+        box-shadow: 0px 16px 24px rgba(10, 31, 68, 0.08);
+        border-radius: 8px;
+        .shapeCreaterHeader{
+            height: 20%;
+            border-bottom: 1px solid #F1F2F4;
+        }
+        .inputFormForShapeDimensions{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            margin: 1.5em;
+            grid-gap:16px;
+            .nameOfShape{
+                grid-column: 1 / 3;
+                >input{
+                    height: 48px;
+                    width: 100%;
+                    background: #F7F8F9;
+                    border: 1px solid #F1F2F4;
+                    box-sizing: border-box;
+                    box-shadow: inset 0px 2px 2px rgba(10, 31, 68, 0.12);
+                    border-radius: 6px;
+                    align-self: center;
+                }
+                >p{
+                    margin:4px;
+                    font-family: Matter TRIAL;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+            }
+            .inputs{
+                >input{
+                    height: 48px;
+                    width: 100%;
+                    background: #F7F8F9;
+                    border: 1px solid #F1F2F4;
+                    box-sizing: border-box;
+                    box-shadow: inset 0px 2px 2px rgba(10, 31, 68, 0.12);
+                    border-radius: 6px;
+                    align-self: center;
+                }
+                >p{
+                    margin:4px;
+                    font-family: Matter TRIAL;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+            }
+
+        }
+        .createNewShapeButton{
+            width:100%;
+            height:48px;
+            border-radius: 100px;
+            background-color: #0948EA;
+            font-family: Matter TRIAL;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 22px;
+            color: white;
+        }
+    }
+}
+

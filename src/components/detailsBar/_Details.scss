@@ -1,0 +1,39 @@
+.detailsBar{
+    position:absolute;
+    display: grid;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 2fr;
+    background-color:#FFFFFF;
+    width:224px;
+    height:336px;
+    bottom:40px;
+    right:32px;
+    border-radius: 8px;
+    box-shadow: 0px 16px 24px rgba(10, 31, 68, 0.08);
+    font-family: 'Matter TRIAL';
+    .detailsBarHeader>h4{
+        color:#0948EA;
+        font-weight: 600;
+    }
+    .addShapeButton{
+        height:48px;
+        width:160px;
+        align-self: center;
+        margin:auto;
+        border-radius: 100px;
+        color:white;
+        background-color: #EB5757;
+        border: none;
+        outline: none;
+        font-weight: 600;
+    }
+    .detailsBarHeader{
+        font-weight: 600;
+    }
+    .gridLine{
+        width: 100%;
+        border-bottom: 1px solid #F1F2F4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
