@@ -36,10 +36,13 @@ function App () {
     })
     setButton(false)
     setSelectedShapeId('')
-
+    setMouseX('')
+    setMouseY('')
+    setName("--")
+    
   }
 
-  function onMouseOverHandler (element){
+  function onMouseOverHandler ( element ){
 
     setMouseX(element.xPosition)
     setMouseY(element.yPosition)

@@ -73,6 +73,7 @@ export default function ShapeCreater () {
                     <div className="inputs">
                         <p>Height</p>
                         <input 
+                        type="number"
                         name="height SET_HEIGHT"
                         placeholder="Enter height"
                         value={height}
@@ -81,6 +82,7 @@ export default function ShapeCreater () {
                     <div className="inputs">
                         <p>Width</p>
                         <input 
+                        type="number"
                         name="width SET_WIDTH"
                         placeholder="Enter Weight"
                         value={width}
@@ -89,6 +91,7 @@ export default function ShapeCreater () {
                     <div className="inputs">
                         <p>X position</p>
                         <input 
+                        type="number"
                         name="xPosition SET_XPOSITION"
                         placeholder="Enter X value"
                         value={xPosition}
@@ -97,6 +100,7 @@ export default function ShapeCreater () {
                     <div className="inputs">
                         <p>Y position</p>
                         <input 
+                        type="number"
                         name="yPosition SET_YPOSITION"
                         placeholder="Enter Y value"
                         value={yPosition}
