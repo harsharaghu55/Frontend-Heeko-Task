@@ -26,6 +26,7 @@ function App () {
 
   }
 
+  // newly added delete functionality
   function deleteClickHandler () {
 
     const newElements = elements.filter((ele,index)=> ele.shapeName !== selectedShapeId )
