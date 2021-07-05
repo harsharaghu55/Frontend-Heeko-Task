@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Frontend-Heeko-Task/static/css/main.faa44a41.chunk.css",
+    "main.css": "/Frontend-Heeko-Task/static/css/main.38ed4beb.chunk.css",
     "main.js": "/Frontend-Heeko-Task/static/js/main.952db0bf.chunk.js",
     "main.js.map": "/Frontend-Heeko-Task/static/js/main.952db0bf.chunk.js.map",
     "runtime-main.js": "/Frontend-Heeko-Task/static/js/runtime-main.2c58bb39.js",
@@ -10,13 +10,13 @@
     "static/js/3.4e6a9365.chunk.js": "/Frontend-Heeko-Task/static/js/3.4e6a9365.chunk.js",
     "static/js/3.4e6a9365.chunk.js.map": "/Frontend-Heeko-Task/static/js/3.4e6a9365.chunk.js.map",
     "index.html": "/Frontend-Heeko-Task/index.html",
-    "static/css/main.faa44a41.chunk.css.map": "/Frontend-Heeko-Task/static/css/main.faa44a41.chunk.css.map",
+    "static/css/main.38ed4beb.chunk.css.map": "/Frontend-Heeko-Task/static/css/main.38ed4beb.chunk.css.map",
     "static/js/2.8aa88d01.chunk.js.LICENSE.txt": "/Frontend-Heeko-Task/static/js/2.8aa88d01.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2c58bb39.js",
     "static/js/2.8aa88d01.chunk.js",
-    "static/css/main.faa44a41.chunk.css",
+    "static/css/main.38ed4beb.chunk.css",
     "static/js/main.952db0bf.chunk.js"
   ]
 }
