@@ -4,13 +4,13 @@ import Details from './components/detailsBar/DetailsBar'
 import ShapeCreater from './components/shapeCreater/ShapeCreater'
 import './style/main.scss'
 import { useStateValue } from "./stateProvider"
-import { PositionSetContext } from "./stateProvider"
+import { PositionSetContext,PositionDisplayContext } from "./stateProvider"
 import { actionTypes } from "./reducer"
 
 function App () {
   const [{ addNewShape,elements },dispatch] = useStateValue()
-  const {setMouseX,setMouseY,setName} = useContext(PositionSetContext)
-  const [deletButton,setButton] = useState(false)
+  const { setMouseX, setMouseY, setName, setButton } = useContext(PositionSetContext)
+  const { deletButton } = useContext(PositionDisplayContext)
   const [selectedShapeId,setSelectedShapeId] = useState('')
 
   function onClickHandler (e) {

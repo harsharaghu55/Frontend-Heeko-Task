@@ -8,10 +8,12 @@ export const StateProvider = ({ reducer,initialState,children }) => {
     const [mouseX,setMouseX] = useState();
     const [mouseY,setMouseY] = useState();
     const [name,setName] = useState("--");
+    const [deletButton,setButton] = useState(false)
+
     return(
         <StateContext.Provider value={ useReducer(reducer, initialState) }>
-            <PositionSetContext.Provider value={{ setMouseY,setMouseX,setName}}>
-                <PositionDisplayContext.Provider value={{mouseX,mouseY,name}}>
+            <PositionSetContext.Provider value={{ setMouseY,setMouseX,setName,setButton}}>
+                <PositionDisplayContext.Provider value={{mouseX,mouseY,name,deletButton}}>
                     {children} 
                 </PositionDisplayContext.Provider>   
             </PositionSetContext.Provider>

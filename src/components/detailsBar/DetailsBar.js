@@ -1,10 +1,19 @@
 import React, { useContext } from 'react'
-import { useStateValue, PositionDisplayContext } from "../../stateProvider"
+import { useStateValue, PositionDisplayContext,PositionSetContext } from "../../stateProvider"
 import { actionTypes } from "../../reducer"
 
 function Details () {
     const [{addNewShape},dispatch] = useStateValue()
     const {mouseX,mouseY,name} = useContext(PositionDisplayContext)
+    const { setButton } = useContext( PositionSetContext )
+
+    function addShapeHandler () {
+        dispatch({
+            type:actionTypes.SET_NEWSHAPE,
+            addNewShape:!addNewShape,
+        })
+        setButton(false)
+    }
 
     return (
         <div className="detailsBar">
@@ -20,12 +29,7 @@ function Details () {
             <div className="yPositionDisplay gridLine">
                 <p>Mouse Y - <span>{mouseY}</span></p>
             </div>
-            <button className="addShapeButton" onClick={()=>{
-                        dispatch({
-                        type:actionTypes.SET_NEWSHAPE,
-                        addNewShape:!addNewShape,
-                    })
-                }}>
+            <button className="addShapeButton" onClick={addShapeHandler}>
                 +Add a shape
             </button>
         </div>
