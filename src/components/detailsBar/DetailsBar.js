@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { useStateValue, PositionDisplayContext } from "../../stateProvider"
 import { actionTypes } from "../../reducer"
 
-function Details() {
+function Details () {
     const [{addNewShape},dispatch] = useStateValue()
     const {mouseX,mouseY,name} = useContext(PositionDisplayContext)
 

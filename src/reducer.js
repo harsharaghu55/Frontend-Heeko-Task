@@ -16,11 +16,12 @@ export const actionTypes = {
     SET_XPOSITION:"SET_XPOSITION",
     SET_YPOSITION:"SET_YPOSITION",
     SET_ELEMENT:"SET_ELEMENT",
+    SET_DELETE:"SET_DELETE",
     RESET:"RESET"
 }
 
 const reducer = (state,action)=>{
-    console.log(action);
+    console.log(action)
     switch(action.type){
         case actionTypes.SET_NEWSHAPE:
             return{
@@ -62,7 +63,11 @@ const reducer = (state,action)=>{
                 ...initialState,
                 elements:[...state.elements]
             }
-        
+        case actionTypes.SET_DELETE:
+            return{
+                ...state,
+                elements:action.elements
+            }
         default:
             return state;
         

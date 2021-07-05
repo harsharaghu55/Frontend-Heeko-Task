@@ -2,11 +2,11 @@ import React, { useEffect } from 'react'
 import { useStateValue } from '../../stateProvider'
 import { actionTypes } from '../../reducer'
 
-
-export default function ShapeCreater() {
+export default function ShapeCreater () {
     const [{ addNewShape, shapeName, height, width, xPosition, yPosition },dispatch] = useStateValue();
 
-    function inputChangeHandler (e){
+    function inputChangeHandler (e) {
+
         e.preventDefault()
         const {name,value} = e.target
         const action = {}
@@ -14,9 +14,11 @@ export default function ShapeCreater() {
         action.type = actionTypes[parameters[1]]
         action[parameters[0]]=value;
         dispatch(action)
+
     }
 
-    function createElementHandler(){
+    function createElementHandler () {
+
         if(shapeName === "" || height === "" || width 
             === "" || xPosition === "" || yPosition === ""){
                 alert("Need all manditory fields to filled")
@@ -30,9 +32,11 @@ export default function ShapeCreater() {
                     addNewShape:!addNewShape,
                 })
         }
+
     }
 
-    function closeButtonHandler(){
+    function closeButtonHandler () {
+
         dispatch({
             type:actionTypes.SET_NEWSHAPE,
             addNewShape:!addNewShape,
